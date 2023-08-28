@@ -1,0 +1,130 @@
+/* Write your code here. */
+
+.winOrLoseCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff33;
+  width: 85%;
+  border: 3px solid #ffffff30;
+  border-radius: 24px;
+  margin: auto;
+  padding: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .winOrLoseCard {
+    width: 80%;
+    padding: 32px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .winOrLoseCard {
+    flex-direction: row;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .winOrLoseCard {
+    width: 60%;
+  }
+}
+
+.detailsSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  order: 1;
+}
+
+@media screen and (min-width: 992px) {
+  .detailsSection {
+    order: 0;
+  }
+}
+
+.gameStatus {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 992px) {
+  .gameStatus {
+    font-size: 64px;
+  }
+}
+
+.currentScoreLabel {
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+@media screen and (min-width: 992px) {
+  .currentScoreLabel {
+    font-size: 36px;
+  }
+}
+
+.currentScoreValue {
+  text-align: center;
+  color: #6a59ff;
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .currentScoreValue {
+    font-size: 48px;
+  }
+}
+
+.playAgainButton {
+  color: #3d3d3d;
+  background-color: #ffce27;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  margin: 16px;
+  padding: 16px;
+  padding-right: 24px;
+  padding-left: 24px;
+  cursor: pointer;
+  outline: none;
+}
+
+.imageSection {
+  display: flex;
+  justify-content: center;
+  order: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .imageSection {
+    order: 1;
+  }
+}
+
+.winOrLoseImage {
+  width: 150px;
+  height: 200px;
+}
+
+@media screen and (min-width: 992px) {
+  .winOrLoseImage {
+    width: 350px;
+    height: 450px;
+  }
+}
